@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SB-Activity | Smart Daily Planner + Time Tracker</title>
   <meta name="description" content="SB-Activity generates tomorrow’s plan from your routines + calendar, adds buffer slots, tracks what happened, runs a daily audit, and learns your patterns." />
+  <link rel="canonical" href="https://staceybaror.github.io/sb-activity/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="SB-Activity" />
+  <meta property="og:description" content="One-click tomorrow planning + one-tap time tracking + daily audit. Learns your patterns to improve tomorrow." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://staceybaror.github.io/sb-activity/" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <style>
     :root { --max: 980px; --pad: 20px; }
@@ -16,7 +24,7 @@
     h2 { font-size: 26px; margin: 0 0 14px; }
     p { margin: 0 0 14px; }
     .cta { display:flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
-    .btn { display:inline-block; padding: 12px 16px; border-radius: 10px; text-decoration:none; font-weight: 700; border: 1px solid #111; }
+    .btn { display:inline-block; padding: 12px 16px; border-radius: 10px; text-decoration:none; font-weight: 700; border: 1px solid #111; color:#111; background:#fff; }
     .btn.primary { background:#111; color:#fff; }
     .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }
     .card { border: 1px solid #e6e6e6; border-radius: 14px; padding: 16px; background:#fff; }
@@ -160,11 +168,15 @@ Daily Audit (auto)
     <h2>Get early access</h2>
     <p>Join the SB-Activity waitlist.</p>
 
-    <!-- Replace action="#" with your Formspree endpoint when ready -->
     <form method="post" action="https://formspree.io/f/xvzzbnpo">
       <input type="text" name="name" placeholder="Name" required />
       <input type="email" name="email" placeholder="Email" required />
       <textarea name="pain" rows="4" placeholder="What’s the biggest problem with your daily planning right now? (optional)"></textarea>
+
+      <input type="hidden" name="_subject" value="SB-Activity — Early Access Request" />
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+      <input type="hidden" name="_next" value="https://staceybaror.github.io/sb-activity/thanks.html" />
+
       <button type="submit">Request early access</button>
     </form>
 
